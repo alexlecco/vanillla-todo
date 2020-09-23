@@ -38,7 +38,7 @@ function addTodo(event) {
   todoDiv.appendChild(trashButton);
 
   // append div to list
-  todoList.appendChild(todoDiv);
+  if (todoInput.value !== "") todoList.appendChild(todoDiv);
 
   // clear todo input value
   todoInput.value = "";
